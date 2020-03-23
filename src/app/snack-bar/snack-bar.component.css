@@ -1,0 +1,25 @@
+.success { 
+    background-color: #89e330;
+    text-align:center;
+    color:black;
+    margin-left:15px;
+    padding:6px;
+    width: 500px;
+    left: 25%;
+    z-index:3;
+    display:block;
+    height: 60px;
+}
+
+.error { 
+    background-color: #db395f;
+    text-align:center;
+    color:black;
+    margin-left:15px;
+    padding:6px;
+    width: 500px;
+    left: 25%;
+    z-index:3;
+    display:block;
+    height: 60px;
+}

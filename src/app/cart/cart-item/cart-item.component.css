@@ -40,3 +40,24 @@ button {
 .remove { 
     padding: 20px;
 }
+
+.flash-message
+{
+    z-index: 10000;
+    background-color: green;
+    position:absolute;
+    top:0;
+    right:0;
+    height: 30px;
+    width: 75px;
+
+}
+
+.my-snackbar { 
+    background-color: green;
+    position:absolute;
+    top:0;
+    right:0;
+    height: 30px;
+    width: 75px; 
+}

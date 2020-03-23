@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {  AppComponent } from './app.component';
@@ -15,7 +15,10 @@ import { ShopComponent } from './shop/shop.component';
 import { CartService } from './cart.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SnackBarComponent } from './snack-bar/snack-bar.component'; 
+import { FlashMessagesModule} from 'angular2-flash-messages'; 
+import { MatCardModule, MatCard } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon';
     CheckoutComponent,
     CreateCartComponent,
     ShopComponent,
+    SnackBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +38,12 @@ import { MatIconModule } from '@angular/material/icon';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule,
+    FlashMessagesModule.forRoot(),
+    MatCardModule
   ],
   providers: [CartService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
