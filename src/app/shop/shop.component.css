@@ -1,0 +1,25 @@
+.container { 
+    margin-top: 100px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+
+.products-container {
+    border: 1px solid black; 
+    width: 50%;
+    height: 650px;
+    min-width: 600px;
+    margin-bottom: 20px;
+}
+
+.cart-container { 
+    border: 1px solid black;  
+    width: 40%; 
+    height: 650px;
+    min-width: 500px; 
+    margin-bottom: 20px;
+
+}

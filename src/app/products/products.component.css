@@ -1,0 +1,17 @@
+.product-header {
+    width: 100%; 
+    background-color: lightgray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+  padding: 0px;
+  margin: 0px;  
+}
+
+.products-container { 
+    height: 60vh;
+    overflow-y: scroll;
+}

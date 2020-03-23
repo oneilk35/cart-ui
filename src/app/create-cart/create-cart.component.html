@@ -1,0 +1,17 @@
+<div class="container">
+    <div>
+        <h4>User Details</h4>
+    </div>
+    <div class="item">Name: {{user.name}}</div>
+    <div class="item">User ID: {{user.id}}</div>
+    <div class="item">Shipping Address: {{user.shippingAddress}}</div>
+    <label for="">Cart ID</label>
+    <div *ngIf="!loading">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; width: 325px;">
+            <input [(ngModel)]="cartID" style="width: 100px">
+            <span *ngIf="error" style="width: 200px; color: red">{{errorMessage}}</span>
+        </div>
+        <button [disabled]="!cartID" (click)="createCart()">Create Cart</button>
+    </div>
+    <div *ngIf="loading" class="loadingio-spinner-rolling-q5l0sax03iq"><div class="ldio-ewrpa5yile"><div></div></div></div>
+</div>

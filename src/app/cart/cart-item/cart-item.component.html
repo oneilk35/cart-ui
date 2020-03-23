@@ -1,0 +1,10 @@
+<div class="item-container">
+    <div class="name">{{item.name}}</div>
+    <div class="price">€{{item.price}}</div>
+    <div class="qty">({{item.qty}})</div>
+    <div class="actions">
+    <div><button (click)="decreaseProductQty()">-</button></div>
+    <div><button (click)="increaseProductQty()">+</button></div>
+    </div>
+    <div class="remove"><button (click)="removeProduct()" class="delete">Remove</button></div>
+</div>

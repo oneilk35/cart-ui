@@ -1,0 +1,31 @@
+<div class="cart-header">
+    <div></div>
+    <h2>Cart</h2>
+    <div style="padding-top: 15px"><mat-icon (click)="getCart()" style="cursor: pointer" aria-hidden="false" aria-label="Example home icon">refresh</mat-icon></div>
+
+</div>
+<div *ngIf="!loading"  class="cart-container">
+    <div class="cart-main">
+        <div *ngIf="cart.products.length > 0" class="cart-items">
+            <app-cart-item *ngFor="let item of cart.products" [item]=item></app-cart-item>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; margin: 100px;" *ngIf="!(cart.products.length > 0)" class="empty-cart">
+            <h2>You have not added any products yet.</h2>
+        </div>
+        <div class="cart-summary">
+            <h4>Total Price: €{{cart.finalPrice}}</h4>
+        </div>
+    </div>
+
+
+    <div class="cart-coupon">
+        <input type="text" style="width: 200px">
+        <button>Apply Coupon</button>
+    </div>
+    <div class="cart-actions">
+        <button>Clear</button>
+        <button>Check Out</button>
+    </div>
+</div>
+<div *ngIf="loading" class="loadingio-spinner-rolling-x0vo39lytxg" style="flex-direction: row; justify-content: center  ;"><div class="ldio-fu9i0g4ibbn"><div></div></div></div>
+

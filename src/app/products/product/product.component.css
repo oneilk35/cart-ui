@@ -1,0 +1,41 @@
+.product-container {
+    margin: 50px;
+    height: 150px;
+    border: 1px solid lightgray; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-container {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}
+
+.details-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.actions-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+img {
+    height: 125px;
+    width: 125px;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
